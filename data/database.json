@@ -74,6 +74,83 @@
       "balance": 49474,
       "createdAt": "2023-12-07T04:39:38.383Z",
       "modifiedAt": "2024-03-07T00:07:36.510Z"
+    },
+    {
+      "id": "zlWMNliq3",
+      "uuid": "751b08e7-e073-4b0b-b831-5c3585acfbd8",
+      "firstName": "João",
+      "lastName": "Silva",
+      "username": "joaosilva123",
+      "password": "$2a$10$S3SIi.z43djsvQvwX4Nfpu03lbByJ5hP361auMDqiKFab3h890i1i",
+      "balance": 0,
+      "createdAt": "2025-04-14T21:35:44.821Z",
+      "modifiedAt": "2025-04-14T21:35:44.821Z"
+    },
+    {
+      "id": "qurrzxMo0",
+      "uuid": "fd805ac2-6aa7-4f0c-a772-e8aa443eabf9",
+      "firstName": "João",
+      "lastName": "Silva",
+      "username": "joaosilva_1744666734380",
+      "password": "$2a$10$pzIZCAECycU/1Ieljt9Ivuc.0R5fE5jujJlmd6lBSDEcnkXfJjPNW",
+      "balance": 0,
+      "createdAt": "2025-04-14T21:38:56.867Z",
+      "modifiedAt": "2025-04-14T21:38:56.867Z"
+    },
+    {
+      "id": "HFNy9VSVK",
+      "uuid": "e3ccbed6-075e-456f-bce4-01caec400fe4",
+      "firstName": "João",
+      "lastName": "Silva",
+      "username": "joaoteste_1744666817200",
+      "password": "$2a$10$oOGMXZ/2BtTpPCGkpo2BwOEPNuKmgoNTFb1xjzd/CyhCIIMSf/ECa",
+      "balance": 0,
+      "createdAt": "2025-04-14T21:40:20.366Z",
+      "modifiedAt": "2025-04-14T21:40:20.366Z"
+    },
+    {
+      "id": "iPPnvkOC6",
+      "uuid": "5fa53810-3e15-4342-a04f-6794482803e3",
+      "firstName": "João",
+      "lastName": "Silva",
+      "username": "joaoteste_1744666890287",
+      "password": "$2a$10$RrDc9V/my2BmrNQyCtloTO1RHfZhDjYuTzHen/bs77/KQEepEemwm",
+      "balance": 0,
+      "createdAt": "2025-04-14T21:41:33.517Z",
+      "modifiedAt": "2025-04-14T21:41:33.517Z"
+    },
+    {
+      "id": "5x0d6txPu",
+      "uuid": "c226f4b0-f37e-4911-8aef-653d1e67673c",
+      "firstName": "João",
+      "lastName": "Silva",
+      "username": "joaoteste_1744666935774",
+      "password": "$2a$10$qfnRVsAw/GqCK3GbT/a0j.9UTrnkK1SXcblvGsmIeIEPfUqF9lMOm",
+      "balance": 0,
+      "createdAt": "2025-04-14T21:42:18.387Z",
+      "modifiedAt": "2025-04-14T21:42:18.387Z"
+    },
+    {
+      "id": "wM8b02r4y",
+      "uuid": "b6ebd910-b2b7-4ce5-a91b-21adbaf7059c",
+      "firstName": "Vinicios",
+      "lastName": "Ferreira",
+      "username": "viniteste_1744666989026",
+      "password": "$2a$10$zFlGbAYZrzG6xyW/hB7zM.AT2fqoqhMeHNF0oI.gVcOQUImu68fwm",
+      "balance": 0,
+      "createdAt": "2025-04-14T21:43:12.001Z",
+      "modifiedAt": "2025-04-14T21:43:12.001Z"
+    },
+    {
+      "id": "NVsosGTNA",
+      "uuid": "d63819e3-332e-4a34-93ea-17859bcd001a",
+      "firstName": "Vinicios",
+      "lastName": "Ferreira",
+      "username": "viniteste_1744667253124",
+      "password": "$2a$10$Gt5trGZcZP5GrXa3HAnpreEougqhHbGzkQK7rBwS9c/Uxp/nyyDTO",
+      "balance": 0,
+      "createdAt": "2025-04-14T21:47:36.629Z",
+      "modifiedAt": "2025-04-14T21:47:36.629Z"
     }
   ],
   "contacts": [
