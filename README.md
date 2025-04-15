@@ -35,7 +35,7 @@ Os testes automatizados estão localizados em:
 ##Post no LinkedIn
 
 Post sobre esse projeto no LinkedIn:  
-[Ver publicação](https://www.linkedin.com/in/seu-usuario/posts/exemplo-link-do-post)
+[Ver publicação](https://www.linkedin.com/posts/ggvinos_qa-testes-cypress-activity-7317671401509769217-lBY8/?rcm=ACoAACyBv14BtI71pRoDgXNVXUF-3LfciD76MM4)
 
 ---
 
