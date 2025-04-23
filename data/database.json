@@ -41,7 +41,7 @@
       "phoneNumber": "887-309-1593",
       "avatar": "https://avatars.dicebear.com/api/human/_XblMqbuoP.svg",
       "defaultPrivacyLevel": "contacts",
-      "balance": 21214290080,
+      "balance": 21215291080,
       "createdAt": "2023-05-21T05:01:54.594Z",
       "modifiedAt": "2024-03-07T14:11:52.161Z"
     },
@@ -503,6 +503,17 @@
       "balance": 0,
       "createdAt": "2025-04-23T19:05:28.715Z",
       "modifiedAt": "2025-04-23T19:05:28.715Z"
+    },
+    {
+      "id": "5RrvQqtMB",
+      "uuid": "0650e40c-7655-4e29-8e51-de522691d2b6",
+      "firstName": "Vinicios",
+      "lastName": "Ferreira",
+      "username": "viniteste_1745435927298",
+      "password": "$2a$10$R9837MdJ9ZxPwzezOcFAX.1ka3dwXfr7y.QCio2DBaIwcfZhXl9Ca",
+      "balance": 0,
+      "createdAt": "2025-04-23T19:18:50.486Z",
+      "modifiedAt": "2025-04-23T19:18:50.486Z"
     }
   ],
   "contacts": [
@@ -957,6 +968,17 @@
       "isDeleted": false,
       "createdAt": "2025-04-23T19:05:35.952Z",
       "modifiedAt": "2025-04-23T19:05:35.952Z"
+    },
+    {
+      "id": "f4k6MH4A2",
+      "uuid": "12e463a9-f807-449d-b7f9-8b49411ab4a5",
+      "userId": "5RrvQqtMB",
+      "bankName": "Banco Aleatorio",
+      "accountNumber": "1234567890",
+      "routingNumber": "123456789",
+      "isDeleted": false,
+      "createdAt": "2025-04-23T19:18:57.529Z",
+      "modifiedAt": "2025-04-23T19:18:57.529Z"
     }
   ],
   "transactions": [
@@ -10928,6 +10950,28 @@
       "requestStatus": "pending",
       "createdAt": "2025-04-23T19:12:38.378Z",
       "modifiedAt": "2025-04-23T19:12:38.378Z"
+    },
+    {
+      "id": "XXFch6ljY",
+      "uuid": "e3175e6e-62bf-41f9-ba2d-1c2cc43bc58c",
+      "amount": 1000,
+      "description": "10 reais pra comprar pão",
+      "receiverId": "_XblMqbuoP",
+      "senderId": "5RrvQqtMB",
+      "status": "complete",
+      "createdAt": "2025-04-23T19:18:58.730Z",
+      "modifiedAt": "2025-04-23T19:18:58.730Z"
+    },
+    {
+      "id": "8Pvvm88jh",
+      "uuid": "01682b90-5694-4190-85cc-e7131c560f3b",
+      "amount": 1000000,
+      "description": "10000 reais pra comprar um carro",
+      "receiverId": "_XblMqbuoP",
+      "senderId": "5RrvQqtMB",
+      "status": "complete",
+      "createdAt": "2025-04-23T19:19:01.664Z",
+      "modifiedAt": "2025-04-23T19:19:01.664Z"
     }
   ],
   "likes": [
@@ -11862,6 +11906,26 @@
       "isRead": false,
       "createdAt": "2025-04-23T19:12:38.381Z",
       "modifiedAt": "2025-04-23T19:12:38.381Z"
+    },
+    {
+      "id": "mB4OD-wkln",
+      "uuid": "30c97ba9-4552-41f1-ac4c-453bb1102ba4",
+      "userId": "_XblMqbuoP",
+      "transactionId": "XXFch6ljY",
+      "status": "received",
+      "isRead": false,
+      "createdAt": "2025-04-23T19:18:58.749Z",
+      "modifiedAt": "2025-04-23T19:18:58.749Z"
+    },
+    {
+      "id": "Q1rYQAOIUQ",
+      "uuid": "845f5218-cb8f-422b-bca5-f1124ab3db34",
+      "userId": "_XblMqbuoP",
+      "transactionId": "8Pvvm88jh",
+      "status": "received",
+      "isRead": false,
+      "createdAt": "2025-04-23T19:19:01.681Z",
+      "modifiedAt": "2025-04-23T19:19:01.681Z"
     }
   ],
   "banktransfers": [
@@ -12624,6 +12688,26 @@
       "type": "withdrawal",
       "createdAt": "2025-04-23T19:12:28.315Z",
       "modifiedAt": "2025-04-23T19:12:28.315Z"
+    },
+    {
+      "id": "RQWr4vPu92",
+      "uuid": "f3f1d351-7b95-417d-8958-1b0176fab9c0",
+      "userId": "5RrvQqtMB",
+      "amount": 1000,
+      "transactionId": "XXFch6ljY",
+      "type": "withdrawal",
+      "createdAt": "2025-04-23T19:18:58.733Z",
+      "modifiedAt": "2025-04-23T19:18:58.733Z"
+    },
+    {
+      "id": "g0BQucR3gs",
+      "uuid": "15809b9f-93e8-45ba-a215-3a465c479102",
+      "userId": "5RrvQqtMB",
+      "amount": 1000000,
+      "transactionId": "8Pvvm88jh",
+      "type": "withdrawal",
+      "createdAt": "2025-04-23T19:19:01.668Z",
+      "modifiedAt": "2025-04-23T19:19:01.668Z"
     }
   ]
 }
