@@ -1,6 +1,6 @@
 # 📋 Casos de Teste - Real World App (RWA) - Cypress IO
 
-Este documento descreve os casos de teste manuais para as funcionalidades de **Login** e **Registro de Usuário** no projeto Real World App (RWA), utilizado no curso *Guardião da Qualidade* da LumeStack.
+Este documento descreve os casos de teste manuais para as funcionalidades de **Login**, **Registro de Usuário** e **Transações (Transferências)** no projeto Real World App (RWA), utilizado no curso *Guardião da Qualidade* da LumeStack.
 
 ---
 
@@ -9,10 +9,10 @@ Este documento descreve os casos de teste manuais para as funcionalidades de **L
 ### ✅ Caso de Teste 1: Login com sucesso
 
 - **Objetivo**: Verificar se o sistema permite o login com credenciais válidas.
-- **Pré-requisitos**: Ter um usuário já cadastrado no sistema com e-mail e senha válidos.
+- **Pré-requisitos**: Ter um usuário já cadastrado no sistema com nome de usuário e senha válidos.
 - **Passos**:
   1. Acessar a página de login.
-  2. Preencher o campo **e-mail** com um e-mail válido.
+  2. Preencher o campo **nome de usuário** com um nome válido.
   3. Preencher o campo **senha** com a senha correta.
   4. Clicar no botão **Login**.
 - **Resultado Esperado**:
@@ -22,15 +22,15 @@ Este documento descreve os casos de teste manuais para as funcionalidades de **L
 
 ### ❌ Caso de Teste 2: Login com falha (credenciais inválidas)
 
-- **Objetivo**: Verificar se o sistema bloqueia o login com e-mail ou senha incorretos.
+- **Objetivo**: Verificar se o sistema bloqueia o login com nome de usuário ou senha incorretos.
 - **Pré-requisitos**: Ter um usuário registrado.
 - **Passos**:
   1. Acessar a página de login.
-  2. Inserir um **e-mail inválido** ou inexistente.
+  2. Inserir um **nome de usuário inválido** ou inexistente.
   3. Inserir uma **senha incorreta**.
   4. Clicar no botão **Login**.
 - **Resultado Esperado**:
-  - O sistema exibe uma **mensagem de erro**, como: "E-mail ou senha inválidos".
+  - O sistema exibe uma **mensagem de erro**, como: "Username or password is invalid".
   - O login **não é realizado**.
 
 ---
@@ -43,11 +43,11 @@ Este documento descreve os casos de teste manuais para as funcionalidades de **L
 - **Pré-requisitos**: Estar na tela de registro.
 - **Passos**:
   1. Acessar a página de registro.
-  2. Preencher todos os campos obrigatórios: nome completo, nome de usuário, e-mail, senha.
+  2. Preencher todos os campos obrigatórios: nome, sobrenome, nome de usuário, senha e confirmação de senha.
   3. Clicar no botão **Registrar**.
 - **Resultado Esperado**:
   - O sistema cadastra o novo usuário com sucesso.
-  - O usuário é redirecionado para a página de login ou dashboard.
+  - O usuário é redirecionado para a página de login.
 
 ---
 
@@ -57,7 +57,7 @@ Este documento descreve os casos de teste manuais para as funcionalidades de **L
 - **Pré-requisitos**: Estar na tela de registro.
 - **Passos**:
   1. Acessar a página de registro.
-  2. Preencher **apenas alguns campos obrigatórios** (ex: deixar o e-mail ou senha em branco).
+  2. Preencher **apenas alguns campos obrigatórios** (ex: deixar a senha em branco).
   3. Clicar no botão **Registrar**.
 - **Resultado Esperado**:
   - O sistema exibe mensagens de erro indicando os campos obrigatórios que não foram preenchidos.
@@ -65,3 +65,38 @@ Este documento descreve os casos de teste manuais para as funcionalidades de **L
 
 ---
 
+## 💸 Funcionalidade: Transações (Transferências)
+
+### ✅ Caso de Teste 5: Enviar dinheiro com saldo suficiente
+
+- **Objetivo**: Verificar se o sistema permite realizar uma transferência com saldo disponível.
+- **Pré-requisitos**:
+  - Estar logado com um usuário que possui saldo suficiente.
+  - Ter uma conta bancária vinculada.
+- **Passos**:
+  1. Acessar a área de nova transação.
+  2. Selecionar um usuário para enviar o valor.
+  3. Preencher o campo de valor com um valor disponível no saldo (ex: R$10).
+  4. Preencher a descrição da transferência.
+  5. Clicar em **Enviar pagamento**.
+- **Resultado Esperado**:
+  - A transferência é realizada com sucesso.
+  - O saldo do usuário é reduzido conforme o valor enviado.
+  - Uma confirmação é exibida.
+
+---
+
+### ❌ Caso de Teste 6: Enviar dinheiro com saldo insuficiente
+
+- **Objetivo**: Verificar se o sistema impede transações com valor superior ao saldo disponível.
+- **Pré-requisitos**:
+  - Estar logado com um usuário sem saldo suficiente.
+- **Passos**:
+  1. Acessar a área de nova transação.
+  2. Selecionar um usuário para envio.
+  3. Preencher o campo de valor com um valor maior do que o saldo (ex: R$10.000).
+  4. Preencher a descrição da transferência.
+  5. Clicar em **Enviar pagamento**.
+- **Resultado Esperado**:
+  - O sistema exibe uma mensagem de erro, como: "Saldo insuficiente" ou "Insufficient funds".
+  - A transferência **não é realizada**.
